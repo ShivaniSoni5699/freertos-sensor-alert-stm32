@@ -1,2 +1,20 @@
 # freertos-sensor-alert-stm32
-STM32 FreeRTOS project using queue and semaphore for sensor monitoring and LED alert display
+
+Real-time sensor monitoring system on STM32 (NUCLEO-C031C6) using FreeRTOS. 
+
+Three concurrent tasks communicate via a queue and binary semaphore to read 
+
+an analog sensor, check a threshold, and trigger an LED alert.
+
+
+
+**Concepts used**
+
+Tasks, Queue, Semaphore, Priority Scheduling
+
+
+
+**Tools**
+
+STM32 · FreeRTOS · Embedded C · Wokwi
+
