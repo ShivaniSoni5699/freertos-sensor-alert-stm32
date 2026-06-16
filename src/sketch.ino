@@ -34,11 +34,11 @@ void vTaskProcess(void *pvParameters)
       Serial.print(",");
       if (received > 511)
       {
-        Serial.println("Alert:value too high");
+        Serial.println("ALERT");
       }
       else
       {
-        Serial.println("ok:normal");
+        Serial.println("OK");
       }
       xSemaphoreGive(xSemaphore);
     }
