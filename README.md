@@ -1,16 +1,36 @@
 # freertos-sensor-alert-stm32
 
-Real-time sensor monitoring system on STM32 (NUCLEO-C031C6) using FreeRTOS.
 
-Three concurrent tasks communicate via a queue and binary semaphore to read
 
-an analog sensor, check a threshold, and trigger an LED alert.
+This project demonstrates a simple FreeRTOS based embedded system on STM32.
 
 
 
-**Concepts used**
+The firmware reads simulated sensor values from analog inputs, processes them in separate FreeRTOS tasks, and sends structured data over Serial for external validation. It also includes a basic watchdog task to detect when sensor updates stop.
 
-Tasks, Queue, Semaphore, Priority Scheduling, Watchdog
+
+
+The project is inspired by automotive ECU validation workflows, where sensor values are monitored, checked against thresholds, and logged for testing.
+
+
+
+**Main features:**
+
+
+
+FreeRTOS task scheduling on STM32
+
+Analog sensor reading using analogRead
+
+Queue-based communication between tasks
+
+Semaphore-based LED status indication
+
+Basic watchdog fault detection
+
+Structured Serial output for Python-based validation
+
+Priority based scheduling
 
 
 
